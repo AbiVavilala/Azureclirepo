@@ -14,7 +14,7 @@ az network nsg rule create -g HubRG --nsg-name HubNsg -n HubNsgRule --priority 1
 # create VM 
 echo create VM
 
-az vm create --resource-group HubRG --admin-username azureuser --authentication-type password --admin-password Avani@080323 --name Hub-VM --image Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest --size Standard_DS1_v2 --vnet-name Hub-Vnet --subnet hub-subnet --nsg HubNsg
+az vm create --resource-group HubRG --admin-username azureuser --authentication-type password --admin-password Sydney --name Hub-VM --image Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest --size Standard_DS1_v2 --vnet-name Hub-Vnet --subnet hub-subnet --nsg HubNsg
 
 
 #Retrieve Public IP Address
